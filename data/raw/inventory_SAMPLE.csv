@@ -1,0 +1,49 @@
+SKU,Product,Category,Supplier,Unit,Unit Cost (PKR),Selling Price (PKR),Stock on Hand,Reorder Point,Reorder Qty,Lead Time Days
+GR-001,Basmati Rice 5kg,Groceries,Metro Wholesale Lahore,bag,1563,1905,14,11,35,6
+GR-002,Cooking Oil 5L,Groceries,Shan Foods Distributors,bottle,2471,2915,2,11,57,9
+GR-003,Sugar 5kg,Groceries,Shan Foods Distributors,bag,654,785,19,8,34,11
+GR-004,Wheat Flour 10kg,Groceries,Metro Wholesale Lahore,bag,1106,1305,50,25,34,10
+GR-005,Tea Leaves 500g,Groceries,Shan Foods Distributors,pack,850,1105,0,16,30,14
+GR-006,Lentils (Daal) 2kg,Groceries,Shan Foods Distributors,pack,534,670,53,18,33,8
+GR-007,Spice Mix 200g,Groceries,Shan Foods Distributors,pack,233,325,58,10,42,8
+GR-008,Salt 1kg,Groceries,Metro Wholesale Lahore,pack,109,145,21,16,54,4
+GR-009,Pasta 500g,Groceries,Metro Wholesale Lahore,pack,319,415,17,20,60,12
+GR-010,Canned Tomatoes 400g,Groceries,Shan Foods Distributors,tin,236,320,92,19,24,3
+HH-001,Washing Powder 3kg,Household,Habib Traders,pack,958,1170,27,17,26,9
+HH-002,Dishwashing Liquid 1L,Household,Habib Traders,bottle,415,540,68,22,43,8
+HH-003,Floor Cleaner 2L,Household,Habib Traders,bottle,446,570,63,29,58,13
+HH-004,Tissue Box (200 sheets),Household,Habib Traders,box,220,285,1,25,30,10
+HH-005,Garbage Bags (30 pcs),Household,Habib Traders,roll,324,415,87,16,40,3
+HH-006,Broom,Household,Karachi Goods Co.,piece,279,375,49,9,37,4
+HH-007,Mop Set,Household,Habib Traders,set,754,940,66,26,51,9
+HH-008,Air Freshener Spray,Household,Habib Traders,can,398,525,45,12,35,14
+HH-009,Laundry Bar Soap (4 pcs),Household,Karachi Goods Co.,pack,315,395,58,25,57,9
+HH-010,Scrub Sponge (6 pcs),Household,Habib Traders,pack,173,235,0,15,52,10
+EL-001,USB Cable 1m,Electronics,TechLink Distributors,piece,261,380,23,9,60,5
+EL-002,Phone Charger 18W,Electronics,Al-Fatah Electronics,piece,1116,1505,35,27,44,12
+EL-003,Wireless Mouse,Electronics,TechLink Distributors,piece,1339,1740,15,24,27,13
+EL-004,Bluetooth Earbuds,Electronics,TechLink Distributors,piece,2749,3520,59,16,38,9
+EL-005,LED Bulb 12W (4 pcs),Electronics,Al-Fatah Electronics,pack,640,830,22,22,52,5
+EL-006,Power Strip 4-Socket,Electronics,Al-Fatah Electronics,piece,929,1210,91,11,60,11
+EL-007,AA Batteries (8 pcs),Electronics,Al-Fatah Electronics,pack,397,535,11,14,30,11
+EL-008,HDMI Cable 2m,Electronics,Al-Fatah Electronics,piece,685,925,84,8,51,3
+EL-009,Mobile Stand,Electronics,TechLink Distributors,piece,478,670,58,19,23,6
+ST-001,A4 Notebook (3 pcs),Stationery,City Stationers,pack,452,590,20,10,24,11
+ST-002,Ballpoint Pen (10 pcs),Stationery,City Stationers,pack,269,365,28,12,55,5
+ST-003,Geometry Box,Stationery,City Stationers,piece,333,435,4,24,33,11
+ST-004,A4 Paper Ream,Stationery,City Stationers,ream,701,855,69,30,43,10
+ST-005,Highlighter Set (4 pcs),Stationery,PaperLine Supplies,set,406,535,37,22,34,4
+ST-006,Stapler + Pins,Stationery,PaperLine Supplies,set,443,575,83,8,57,6
+ST-007,Glue Stick (3 pcs),Stationery,PaperLine Supplies,pack,180,245,90,10,34,4
+ST-008,File Folder (5 pcs),Stationery,PaperLine Supplies,pack,264,345,27,18,37,13
+ST-009,Colour Pencils (12 pcs),Stationery,PaperLine Supplies,pack,352,465,0,14,56,12
+PC-001,Shampoo 400ml,Personal Care,GlowMart Supplies,bottle,671,860,75,15,32,4
+PC-002,Bathing Soap (3 pcs),Personal Care,GlowMart Supplies,pack,342,445,84,29,47,9
+PC-003,Toothpaste 140g,Personal Care,DermaCare Distributors,tube,339,440,7,9,45,14
+PC-004,Face Wash 100ml,Personal Care,DermaCare Distributors,tube,523,690,42,11,32,11
+PC-005,Hair Oil 200ml,Personal Care,DermaCare Distributors,bottle,437,570,66,12,37,10
+PC-006,Body Lotion 250ml,Personal Care,DermaCare Distributors,bottle,583,745,66,10,23,13
+PC-007,Deodorant Spray,Personal Care,DermaCare Distributors,can,489,635,19,8,30,9
+PC-008,Hand Wash 500ml,Personal Care,GlowMart Supplies,bottle,422,550,16,23,23,5
+PC-009,Talcum Powder 200g,Personal Care,GlowMart Supplies,bottle,348,450,57,8,49,7
+PC-010,Cotton Pads (80 pcs),Personal Care,GlowMart Supplies,pack,227,305,101,30,29,6
