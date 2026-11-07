@@ -1,5 +1,7 @@
 # P8 — Inventory & Stock Tracker
 
+**Repo:** https://github.com/mhkh-stock/p8-inventory-stock-tracker
+
 **Client pain:** a small shop owner knows roughly what is on the
 shelves but not exactly — stock counts live in a notebook, nobody
 notices a product has run out until a customer asks for it, and
