@@ -39,6 +39,33 @@ Inventory + Reorder List + Movements, 48 SKUs, 5 categories)
 | `src/generate_sample_data.py` | Generates the sample CSV (deterministic, seed 42) |
 | `src/build_tracker.py` | Builds the workbook: Inventory table, live-formula Dashboard/Reorder List, native chart, Movements log |
 | `src/checks.py` | Data-quality checks as code — 35 checks, all passing |
+| `requirements.txt` | Pinned dependency: `openpyxl==3.1.2` (verified with Python 3.12) |
+
+## How it fits together
+
+```
+data/raw/inventory_SAMPLE.csv ──▶ src/build_tracker.py ──▶ outputs/inventory_tracker_SAMPLE.xlsx
+(sample data, seed 42)              (openpyxl)             Dashboard / Inventory / Reorder List / Movements
+                                                                    ▲ src/checks.py verifies all of it
+```
+
+## Limits — what this tracker does not do
+
+- **Movements is a log only.** It does not change Inventory stock
+  levels and there is no live running balance on that sheet.
+- **Suggested Order Qty = Reorder Point × 2 − Stock on Hand.** The
+  `Reorder Qty` and `Lead Time Days` columns on the Inventory sheet
+  are reference data (supplier / lead-time tracking); no formula
+  uses them, so changing them does not change the suggested order.
+- **No barcode / POS integration** and no automatic supplier order —
+  the Reorder List is the list the owner orders from.
+- **One shop, PKR only.** Prices, costs and stock values are all in
+  Pakistani rupees; the sample covers 48 SKUs in 5 categories.
+- **Open it in Excel or Google Sheets to see the numbers.** The
+  workbook carries live formulas (openpyxl writes formulas, not
+  cached values), so they calculate when the file is opened — a raw
+  file reader that does not calculate formulas will show blanks
+  instead of KPI values.
 
 ## 3 key findings (from this sample)
 
@@ -86,6 +113,9 @@ rows including the header.
 
 ## How to run it (under 5 steps)
 
+First time only: `pip install -r requirements.txt` (openpyxl 3.1.2,
+verified with Python 3.12).
+
 1. Open `outputs/inventory_tracker_SAMPLE.xlsx` — that is the
    deliverable.
 2. To regenerate the sample data: `python3 src/generate_sample_data.py`.
@@ -98,7 +128,7 @@ rows including the header.
 
 ## Tools
 
-- Python 3 · openpyxl (workbook + chart)
+- Python 3.12 · openpyxl 3.1.2 (pinned in `requirements.txt`)
 - Excel / Google Sheets (the client's tool, not a new tool to learn)
 
 ## Data source note

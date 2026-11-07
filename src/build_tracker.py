@@ -65,12 +65,12 @@ d["B6"].number_format = "#,##0"
 d["A7"] = "Low-stock items"; d["B7"] = f'=COUNTIF(Inventory!N2:N{LAST},"LOW STOCK")'
 d["A8"] = "Out-of-stock items"; d["B8"] = f'=COUNTIF(Inventory!N2:N{LAST},"OUT OF STOCK")'
 d["A9"] = "Items on the Reorder List"; d["B9"] = "=B7+B8"
-d["A10"] = "Categories tracked"; d["B10"] = "=COUNTA(A14:A18)"
+cats = sorted({r["Category"] for r in rows})
+d["A10"] = "Categories tracked"; d["B10"] = f"=COUNTA(A14:A{13 + len(cats)})"
 d["A12"] = "Stock value by category (PKR)"; d["A12"].font = Font(bold=True)
 d["A13"] = "Category"; d["B13"] = "Stock Value (PKR)"; d["C13"] = "Share"
 for c in d[13]:
     c.font = Font(bold=True)
-cats = sorted({r["Category"] for r in rows})
 for i, cat in enumerate(cats):
     row = 14 + i
     d[f"A{row}"] = cat
